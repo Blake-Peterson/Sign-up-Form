@@ -1,13 +1,36 @@
+@font-face {
+  font-family: odin-norse;
+  src: url(fonts/Norse-Bold.otf);
+}
+
 :root {
 }
 
 #container {
+  display: flex;
+  flex-direction: row;
 }
 
-#background {
+.background-container {
+  max-width: 300px;
 }
 
-#odin-banner {
+.background-container #leaves-image {
+  width: 100%;
+}
+
+.odin-body {
+  position: absolute;
+  width: 100%;
+  background: black;
+  opacity: 0.6;
+  color: white;
+  top: 8rem;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: odin-norse, sans-serif;
+}
+.odin-body h1 {
 }
 
 #sign-up-information {
