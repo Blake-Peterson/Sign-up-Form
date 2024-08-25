@@ -8,57 +8,62 @@
 </head>
 <body>
     <div id="container">
-        <div class="left-panel">
-            <div class="odin-banner">
-                <img id="odin-logo"src="images/odin-lined.png">
-                <h1>ODIN</h1>
+        <div id="left-panel">
+            <div class="banner-container">
+                <div id="odin-banner">
+                    <img id="odin-logo"src="images/odin-lined.png">
+                    <h1>ODIN</h1>
+                </div>
             </div>
-
-            <p>Photo by Halie West on Unsplash</p>
+            <div id="background-credit">
+                <p>Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a>
+                    on <a href="https://unsplash.com/">Unsplash</a>
+                </p>
+            </div>
         </div>
         <div id ="right-panel">
-            <div id="header">
+            <div id="introduction">
                 <p>This is not a real online service! You know you need something like this inyour life to help you realize your deepest dreams. Sign up now to get started.</p>
                 <p>You know you want to.</p>
             </div>
             <div id="login_information">
                 <form action="example.com/path" method="post">
                     <legend>Let's do this!</legend>
-                    <fieldset>
-                        <div id="form-input-left-side">
-                            <div class="form-input-fields">
+                        <div class="form-input-fields">
+                            <div id="form-input-firstname">
                                 <label for="first_name">FIRST NAME</label>
                                 <input type="text" id="first_name" name="first_name">
                             </div>
-                            <div class="form-input-fields">
-                                <label for="user_email">EMAIL</label>
-                                <input type="text" id="user_email" name="user_email">
-                            </div>
-                            <div class="form-input-fields">
-                                <label for="user_password">PASSWORD</label>
-                                <input type="text" id="user_password" name="user_password">
-                            </div>
-                        </div>
-                        <div id="form-input-right-side">
-                            <div class="form-input-fields">
+                            <div id="form-input-lastname">
                                 <label for="last_name">LAST NAME</label>
                                 <input type="text" id="last_name" name="last_name">
                             </div>
-                            <div class="form-input-fields">
+                        </div>
+                        <div class="form-input-fields">
+                            <div id="form-input-email">
+                                <label for="user_email">EMAIL</label>
+                                <input type="text" id="user_email" name="user_email">
+                            </div>
+                            <div id="form-input-phone-number">
                                 <label for="user_phone_number">PHONE NUMBER</label>
                                 <input type="text" id="user_phone_number" name="user_phone_number">
                             </div>
-                            <div class="form-input-fields">
+                        </div>
+                        <div class="form-input-fields">
+                            <div id="form-input-password">
+                                <label for="user_password">PASSWORD</label>
+                                <input type="text" id="user_password" name="user_password">
+                            </div>
+                            <div id="form-input-password-confirm">
                                 <label for="user_confirm_password">CONFIRM PASSWORD</label>
                                 <input type="text" id="user_confirm_password" name="user_confirm_password">
                             </div>
                         </div>
-                    </fieldset>
                 </form>
             </div>
             <div id="create_account">
                 <button>Create Account</button>
-                <p>Already have an account? Log in</p>
+                <p>Already have an account? <span>Log in</span></p> <!--No link currently-->
             </div>
         </div>
     </div>
