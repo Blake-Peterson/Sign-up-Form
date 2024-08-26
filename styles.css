@@ -91,6 +91,11 @@ button {
   background-color: var(--nature-green);
 }
 
+p {
+  font-size: 1.6rem;
+}
+
 span {
   color: var(--nature-green);
+  font-size: 1.6rem;
 }
