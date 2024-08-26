@@ -5,6 +5,9 @@
 
 :root {
   --nature-green: #596d48;
+  --input-light-border: #e5e7eb;
+  --focus-blue: lightblue;
+  --invalid-red: red;
 }
 
 #container {
@@ -25,6 +28,8 @@
 }
 
 #background-credit * {
+  display: flex;
+  justify-content: center;
   color: white;
 }
 
@@ -36,17 +41,13 @@
 
 #introduction {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 #introduction,
 #login_information,
 #create_account {
-  padding: 2.4em;
-}
-
-#login_information {
-  box-shadow: inset 0 black;
+  padding: 2em 4em;
 }
 
 .form-input-fields {
@@ -63,6 +64,26 @@
 #form-input-password-confirm {
   display: flex;
   flex-direction: column;
+  padding: 1.6em;
+  background-color: var(--input-light-border);
+}
+
+#form-input-firstname:focus,
+#form-input-lastname:focus,
+#form-input-email:focus,
+#form-input-phone-number:focus,
+#form-input-password:focus,
+#form-input-password-confirm:focus {
+  box-shadow: var(--focus-blue);
+}
+
+#form-input-firstname:invalid,
+#form-input-lastname:invalid,
+#form-input-email:invalid,
+#form-input-phone-number:invalid,
+#form-input-password:invalid,
+#form-input-password-confirm:invalid {
+  box-shadow: var(--invalid-red);
 }
 
 button {
