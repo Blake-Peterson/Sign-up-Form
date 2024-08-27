@@ -10,14 +10,24 @@
   --invalid-red: red;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #container {
   display: flex;
-  box-sizing: border-box;
+  flex-direction: row;
+  height: 100vh;
 }
 
 #left-panel {
-  width: 50%;
+  max-width: 40%;
+  width: 40%;
+  height: auto;
   background-image: url("./images/halie-west-leaves-unsplash.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .banner-container {
@@ -25,6 +35,14 @@
   opacity: 0.6;
   width: 100%;
   color: white;
+}
+
+#odin-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
 }
 
 #background-credit * {
@@ -65,7 +83,6 @@
   display: flex;
   flex-direction: column;
   padding: 1.6em;
-  background-color: var(--input-light-border);
 }
 
 #form-input-firstname:focus,
