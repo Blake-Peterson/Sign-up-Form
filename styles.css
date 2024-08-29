@@ -103,6 +103,9 @@
 button {
   color: white;
   background-color: var(--nature-green);
+  height: 4vh;
+  width: 24vh;
+  border-radius: 2em;
 }
 
 p {
