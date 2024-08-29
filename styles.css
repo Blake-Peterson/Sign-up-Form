@@ -103,13 +103,16 @@
 button {
   color: white;
   background-color: var(--nature-green);
-  height: 4vh;
-  width: 24vh;
-  border-radius: 2em;
+  height: 5vh;
+  width: 22vh;
+  border-radius: 1em;
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 span {
