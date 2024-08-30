@@ -67,8 +67,6 @@ a {
   margin-left: 0.1em;
   margin-right: 0.1em;
   color: white;
-  text-decoration: none;
-  z-index: 1;
 }
 
 #right-panel {
@@ -78,10 +76,14 @@ a {
   flex-direction: column;
   height: 100vh;
 }
-/*
+
 #introduction {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.2em;
+}
+
+#introduction #intro_phrase {
+  padding-top: 15vh;
 }
 
 #introduction,
@@ -92,7 +94,14 @@ a {
 #introduction,
 #login_information,
 #create_account {
+  height: 33vh;
   padding: 2em 4em;
+}
+
+legend {
+  font-size: 3em;
+  font-weight: bold;
+  padding-bottom: 2em;
 }
 
 .form-input-rows {
@@ -115,7 +124,7 @@ a {
 .form-input:invalid {
   box-shadow: var(--invalid-red);
 }
-*/
+
 button {
   color: white;
   background-color: var(--nature-green);
