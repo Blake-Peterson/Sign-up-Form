@@ -114,8 +114,9 @@ a {
 legend {
   font-size: 3em;
   font-weight: bold;
-  padding-top: 3vh;
   padding-left: 2.4em;
+  padding-right: 44vh;
+  padding-top: 4vh;
 }
 
 .form-input-rows {
@@ -145,13 +146,12 @@ legend {
 
 input:focus {
   border-color: var(--focus-blue);
+  border-style: solid;
+  box-shadow: 0 0 20px var(--focus-blue);
 }
 
 input:invalid {
   border-color: var(--invalid-red);
-}
-
-#create_account {
 }
 
 button {
