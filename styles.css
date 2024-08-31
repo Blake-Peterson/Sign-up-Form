@@ -79,50 +79,79 @@ a {
 
 #introduction {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.8em;
+  height: 33vh;
+  padding: 2em 4em;
 }
 
-#introduction #intro_phrase {
-  padding-top: 15vh;
+#introduction #intro_phrase,
+#create_account {
+  padding-right: 44vh;
+  padding-top: 12vh;
 }
+
+/*
+#login_information form {
+  height: 67vh;
+  padding: 2em 4em;
+}*/
 
 #introduction,
 #create_account {
   background-color: whitesmoke;
 }
 
-#introduction,
-#login_information,
-#create_account {
+#introduction {
   height: 33vh;
-  padding: 2em 4em;
+  padding-left: 2.4em;
+  padding-top: 1em;
+}
+
+#login_information {
+  height: 60vh;
 }
 
 legend {
   font-size: 3em;
   font-weight: bold;
-  padding-bottom: 2em;
+  padding-top: 3vh;
+  padding-left: 2.4em;
 }
 
 .form-input-rows {
   display: flex;
   flex-direction: row;
+  padding-top: 3vh;
+  padding-left: 2.4em;
 }
 
 .form-input {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   box-sizing: border-box;
-  padding-left: 0;
-  padding-right: 4em;
+  padding-left: 2.4em;
+  padding-bottom: 2em;
 }
 
-.form-input:focus {
-  box-shadow: var(--focus-blue);
+#create_account {
+  padding: 2em 4em;
+  height: 10vh;
 }
 
-.form-input:invalid {
-  box-shadow: var(--invalid-red);
+.form-input input {
+  width: 16em;
+  height: 2vh;
+}
+
+input:focus {
+  border-color: var(--focus-blue);
+}
+
+input:invalid {
+  border-color: var(--invalid-red);
+}
+
+#create_account {
 }
 
 button {
@@ -142,5 +171,5 @@ p {
 
 span {
   color: var(--nature-green);
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }

@@ -32,7 +32,7 @@
                     <legend>Let's do this!</legend>
                         <div class="form-input-rows">
                             <div class="form-input">
-                                <input type="text" id="first_name" placeholder="First Name" name="first_name" required>
+                                <input type="text" id="first_name" placeholder="First Name" pattern="[A-Z | a-z]*" max="20"  name="first_name" required>
                                 <label for="first_name">FIRST NAME</label>
                             </div>
                             <div class="form-input">
@@ -46,25 +46,26 @@
                                 <label for="user_email">EMAIL</label>
                             </div>
                             <div class="form-input"> 
-                                <input type="text" id="user_phone_number" placeholder="(XXX) XXX-XXXX" name="user_phone_number" required>
+                                <input type="text" id="user_phone_number" placeholder="XXX-XXX-XXXX" min="12" max="12" 
+                                required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="user_phone_number" >
                                 <label for="user_phone_number">PHONE NUMBER</label>
                             </div>
                         </div>
                         <div class="form-input-rows">
                             <div class="form-input">
-                                <input type="passowrd" id="user_password" placeholder="Password" name="user_password" required>
+                                <input type="passowrd" id="user_password" placeholder="Password" name="user_password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
                                 <label for="user_password">PASSWORD</label>
                             </div>
                             <div class="form-input">
-                                <input type="password" id="user_confirm_password" placeholder="Password" name="user_confirm_password" required>
+                                <input type="password" id="user_confirm_password" placeholder="Password" name="user_confirm_password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
                                 <label for="user_confirm_password">CONFIRM PASSWORD</label>
                             </div>
                         </div>
+                        <div id="create_account">
+                            <button type="submit">Create Account</button>
+                            <p>Already have an account? <span>Log in</span></p> <!--No link currently-->
+                        </div>
                 </form>
-            </div>
-            <div id="create_account">
-                <button>Create Account</button>
-                <p>Already have an account? <span>Log in</span></p> <!--No link currently-->
             </div>
         </div>
     </div>
